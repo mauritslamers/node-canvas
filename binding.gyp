@@ -46,9 +46,16 @@
             '-lpixman-1',
             '-lcairo'
           ],
-          'defines': [
-            'LDFLAGS="-L./usr/local/lib"',
-            'CPPFLAGS="-I./usr/local/include"'
+          'xcode_settings': {
+            'OTHER_LDFLAGS': [
+               '-L./usr/local/lib'
+            ],
+          },
+          'include_dirs':[
+            'usr/local/include'
+          ],
+          'ldflags': [
+            '-L./usr/local/lib'
           ]
         }],
         ['with_pango=="true"', {
