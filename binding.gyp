@@ -45,6 +45,10 @@
           'libraries': [
             '-lpixman-1',
             '-lcairo'
+          ],
+          'defines': [
+            'LDFLAGS="-L./usr/local/lib"',
+            'CPPFLAGS="-I./usr/local/include"'
           ]
         }],
         ['with_pango=="true"', {
